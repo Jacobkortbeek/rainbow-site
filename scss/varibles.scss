@@ -1,0 +1,32 @@
+//mixins
+@mixin img-row {
+  height: 35vh;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@mixin btn-design {
+  width: 25%;
+  height: 10vh;
+  border-radius: 15px;
+}
+
+@mixin no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+
+//varibles
+
+
+
+//header
+$nav-color: black;
+$header-font-color: white;
+
+//main
+$btn-color: black;
+$btn-font-color: white;

@@ -1,0 +1,165 @@
+.animate-div-one {
+  border: solid black 5px;
+  height: 40vh;
+  width: 40vh;
+  overflow: hidden;
+  @keyframes big-ball-1 {
+    from {transform: translate(-40%, -20%);}
+    to {transform: translate(30%, -20%);}
+  }
+  .big-ball-1 {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: skyblue;
+    transform: translate(30%, -20%);
+    animation-name: big-ball-1;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+  }
+  @keyframes small-ball-1 {
+    from {transform: translate(20%, -190%);}
+    to {transform: translate(-120%, -100%);}
+  }
+  .small-ball-1 {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: steelblue;
+    z-index: 1;
+    float: right;
+    transform: translate(-120%, -100%);
+    //position: relative;
+    //right: 35%;
+    //bottom: 5%;
+    animation-name: small-ball-1;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+  }
+  @keyframes green-ball-1 {
+    0% {transform: translate(-20%, -190%);}
+    25% {transform: translate(-120%, 400%);}
+    50% {transform: translate(100%, 250%);}
+    75% {transform: translate(-200%, -200%);}
+    100% {transform: translate(-300%, 330%);}
+  }
+  .background-ball-green {
+    background-color: limegreen;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    z-index: -10;
+    opacity: 0.6;
+    float: right;
+    animation-name: green-ball-1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes yellow-ball-1 {
+    0% {transform: translate(-100%, 250%);}
+    25% {transform: translate(400%, -200%);}
+    50% {transform: translate(300%, 500%);}
+    75% {transform: translate(-175%, 50%);}
+    100% {transform: translate(600%, 80%);}
+  }
+  .background-ball-yellow {
+    background-color: yellow;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    z-index: -5;
+    opacity: 0.6;
+    animation-name: yellow-ball-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes red-ball-1 {
+    0% {transform: translate(-50%, -50%);}
+    25% {transform: translate(700%, -150%);}
+    50% {transform: translate(-300%, 600%);}
+    75% {transform: translate(175%, -300%);}
+    100% {transform: translate(800%, 80%);}
+  }
+  .background-ball-red {
+    background-color: red;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    z-index: -15;
+    opacity: 0.6;
+    animation-name: red-ball-1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+
+
+.animate-div-two {
+  border: solid black 5px;
+  height: 40vh;
+  width: 40vh;
+  overflow: hidden;
+  @keyframes guy {
+    0% {transform: translate(0%, 655%);}
+    .5% {transform: translate(0%, 635%);}
+    1% {transform: translate(0%, 655%);}
+    1.5% {transform: translate(0%, 638%);}
+    2% {transform: translate(0%, 655%);}
+    2.5% {transform: translate(150%, 655%);}
+    2.8% { transform: translate(550%, 500%); }
+    3% {transform: translate(500%, 400%);}
+    3.2% {transform: translate(550%, 300%);}
+    3.4% {transform: translate(500%, 200%);}
+    3.8% {transform: translate(550%, 100%);}
+    4% {transform: translate(500%, -10%);}
+    4.5% {transform: translate(450%, -10%) rotate(45deg); }
+    5% {transform: translate(450%, -10%) rotate(25deg); }
+    5.5% {transform: translate(450%, -10%) rotate(45deg); }
+
+  }
+  .guy {
+    width: 5vw;
+    height: 5vh;
+    transform: translate(0%, 655%);
+    background-color: red;
+    animation-name: guy;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+  @keyframes arm {
+    0% {opacity: 1; transform: translate(70%, 3400%) rotate(80deg);}
+    25% {opacity: 1; transform: translate(70%, 3400%) rotate(-60deg);}
+    50% {opacity: 1; transform: translate(70%, 3400%) rotate(0deg);}
+    75% {opacity: 1; transform: translate(70%, 3400%) rotate(-60deg);}
+    100% {opacity: 1; transform: translate(70%, 3400%) rotate(0deg);}
+  }
+  .arm {
+    width: 3.8vw;
+    height: 1vh;
+    opacity: 0;
+    background-color: red;
+    animation-name: arm;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+}
+
+@keyframes example {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(360deg);}
+    50% {transform: rotate(720deg);}
+    75% {transform: rotate(1440deg);}
+    100% {transform: rotate(2880deg);}
+}
+img {
+  height: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+  border-radius: 50%;
+  animation-name: example;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}

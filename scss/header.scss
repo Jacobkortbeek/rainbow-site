@@ -1,0 +1,82 @@
+@import "varibles";
+
+header {
+  a {
+    color: $header-font-color;
+    text-decoration: none;
+    :hover {
+      color: $header-font-color;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  .menu {
+    color: $header-font-color;
+    background-color: $nav-color;
+    overflow: auto;
+    margin: auto;
+    text-align: center;
+    p {
+      margin-top: 5%;
+      font-size: 1em;
+    }
+    h1 {
+      margin-top: 0%;
+      opacity: 0;
+      transition: all 5s ease-in-out;
+    }
+    h3 {
+      display: block;
+      font-size: 1em;
+      opacity: 0;
+      transition: all 2s ease-in-out;
+    }
+    .show {
+      opacity: 1;
+    }
+    hr {
+      width: 80%;
+      color: grey;
+    }
+  }
+  .header-main {
+    background-image: url('./assets/background1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    overflow: hidden;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5em;
+    }
+    @keyframes rotate {
+        from { opacity: 0; transform: rotate3d(1,2,0,90deg);}
+        to { opacity: 1; transform: rotate3d(0,0,0,0deg);}
+    }
+    h2 {
+      padding-left: 20%;
+      padding-top: 20%;
+      position: relative;
+      top: 5%;
+      font-size: 2.4em;
+      color: white;
+      width: 41%;
+      animation-name: rotate;
+      animation-duration: 10s;
+      animation-iteration-count: 1;
+
+    }
+    .more-btn {
+      text-align: center;
+      width: 10%;
+      border: white solid 0.1em;
+      margin-left: 20%;
+      margin-bottom: 15%;
+      a {
+        font-size: 1em;
+      }
+    }
+  }
+}
